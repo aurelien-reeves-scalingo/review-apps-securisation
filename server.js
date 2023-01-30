@@ -5,7 +5,7 @@ var app = express()
 
 app.get('/', function (req, res) {
   res.write('Hello World!')
-  res.write(process.env)
+  res.write(process.env.joinr(', ')
   res.write('This is the end of the world!')
   res.write('(as we know it)')
   res.end()
